@@ -99,7 +99,8 @@ img {
   /*display: block;*/
   color: var(--bluetextclr);
 }
-.o-really-current > .current-page-link::after {
+/* > .current-page-link*/
+.o-really-current::after {
   content: '';
   display: block;
   width: 100%;
