@@ -227,6 +227,8 @@ img {
   border-radius: 50%;
 }
 .footer-block-hello {
+  margin-top: 0;
+  margin-bottom: 20px;
   font-weight: 500;
   letter-spacing: 0.03em;
   line-height: 1.14;
@@ -693,7 +695,7 @@ img {
   line-height: 1.88;
   letter-spacing: 0.03em;
 }
-.cards-list .cards-item:hover,
-.cards-list .cards-item:focus {
+.cards-list .cards-item-link:hover,
+.cards-list .cards-item-link:focus {
   box-shadow: var(--card-wrapper-shadow);
 }
