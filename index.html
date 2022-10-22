@@ -61,14 +61,7 @@
       <section class="hero">
         <div class="container">
           <h1 class="hero-title all-big-chars">Ефективні рішення для вашого бізнесу</h1>
-          <button type="button" class="hero-button">Замовити послугу</button>
-        </div>
-        <div class="backdrop is-hidden">
-          <div class="modal">
-            <p class="modal-text">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque, odit!
-            </p>
-          </div>
+          <button type="button" class="hero-button" data-modal-open>Замовити послугу</button>
         </div>
       </section>
       <section class="features section-paddings-px">
@@ -460,5 +453,16 @@
         </div>
       </div>
     </footer>
+    <!--modal-->
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <p class="modal-text">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque, odit!
+        </p>
+        <button type="button" data-modal-close></button>
+      </div>
+    </div>
+    <!---modal end--->
+    <script src="./js/modal.js"></script>
   </body>
 </html>
