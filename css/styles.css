@@ -717,3 +717,12 @@ img {
   opacity: 0;
   pointer-events: none;
 }
+.modal {
+}
+.modal .modal-text {
+}
+.modal .modal-close-button {
+}
+.modal .modal-close-button-icon {
+  fill: orange;
+}
