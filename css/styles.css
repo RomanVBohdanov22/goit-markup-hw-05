@@ -96,9 +96,16 @@ img {
 }
 /*.contact-list*/
 .o-really-current .current-page-link {
+  /*display: block;*/
   color: var(--bluetextclr);
 }
-
+.o-really-current > .current-page-link::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 4px;
+  background: var(--bluebtn);
+}
 .header-flex-box,
 .nav-contacts-flex,
 .navigation {
@@ -724,5 +731,5 @@ img {
 .modal .modal-close-button {
 }
 .modal .modal-close-button-icon {
-  fill: orange;
+  fill: orange; /*тимчасово*/
 }
