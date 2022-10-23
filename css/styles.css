@@ -94,19 +94,9 @@ img {
   margin-right: 0px;*/
   /*outline: 2px solid palegreen; /*Репета-стайл*/
 }
-/*.contact-list*/
-.o-really-current.current-page-link {
-  /*display: block;*/
-  color: var(--bluetextclr);
-}
+
 /* > .current-page-link*/
-.o-really-current::after {
-  content: '';
-  display: block;
-  width: 100%;
-  height: 4px;
-  background: var(--bluebtn);
-}
+
 .header-flex-box,
 .nav-contacts-flex,
 .navigation {
@@ -146,6 +136,7 @@ img {
   text-decoration: none;
   color: var(--fontcolorh3);
 }
+
 .contacts-item .link {
   font-weight: 500;
   font-size: 14px;
@@ -153,6 +144,26 @@ img {
   letter-spacing: 0.02em;
   text-decoration: none;
   color: var(--fontcolordescrp);
+}
+.o-really-current {
+  position: relative;
+}
+/*.contact-list*/
+.o-really-current.current-page-link {
+  /*display: block;*/
+  color: var(--bluetextclr);
+}
+
+.o-really-current::after {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  width: 100%;
+  height: 4px;
+  background: var(--bluebtn);
+  border-radius: 2px;
 }
 
 .footer {
@@ -309,7 +320,7 @@ img {
 .contacts-item > .link
 /*, .address-item > .address-link *//*розширення клікабельної зони*/
 {
-  display: block;
+  display: flex;
   padding: 32px 0px;
 }
 .all-big-chars {
@@ -320,7 +331,7 @@ img {
   /*height: 32px;*/
   /*padding: 0;*/
   display: flex;
-  /*align-items: center;*/
+  align-items: center;
   /*justify-content: center;*/
   /*line-height: 1.14;*/
   /*gap: 20px;*/
@@ -345,7 +356,7 @@ img {
 }
 .class-icon-link > .smartphone-icon {
   width: 10px;
-  height: 12px;
+  height: 16px;
   margin-right: 10px;
   fill: currentColor;
 }
