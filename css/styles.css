@@ -737,11 +737,19 @@ img {
   pointer-events: none;
 }
 .modal {
+  outline: orange 2px solid;
+  width: 528px;
+  height: 521px;
 }
 .modal .modal-text {
+  outline: orange 2px dotted;
 }
 .modal .modal-close-button {
+  width: 30px;
+  height: 30px;
 }
 .modal .modal-close-button-icon {
   fill: orange; /*тимчасово*/
+  width: 18px;
+  height: 18px;
 }
