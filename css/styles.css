@@ -751,11 +751,13 @@ img {
   z-index: 2;
 }
 
-.cards-item-link:hover {
+.cards-item-link:hover,
+.cards-item-link:focus {
   box-shadow: var(--card-wrapper-shadow);
 }
 /*.cards-item-overlay-box:hover .cards-item-overlay,*/
-.cards-item-link:hover .cards-item-overlay {
+.cards-item-link:hover .cards-item-overlay,
+.cards-item-link:focus .cards-item-overlay {
   transform: translatey(0);
 }
 
