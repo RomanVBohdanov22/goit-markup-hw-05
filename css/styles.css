@@ -764,24 +764,24 @@ img {
   border: none;
   border-radius: 4px;
   background-color: var(--white-bg);
-  justify-content: center;
+  justify-content: auto;
   padding-left: 0;
   padding-right: 0;
   padding-top: 0;
   padding-bottom: 0;
-  gap: 16px;
+  /*gap: 16px;*/
 }
 .modal .modal-text {
   position: relative;
-  top: 0;
-  left: 0;
-  /*bottom: 0;*/
-  /*display: inline-block;*/
-  /*display: flex;*/
-  outline: orange 2px dotted;
+  top: 8px;
+  left: 8px;
+  /*z-index: 1;*/
+  width: 120px;
+  /*outline: orange 2px dotted;*/
 }
 .modal .modal-close-button {
   position: absolute;
+  /*z-index: 4;*/
   top: 8px;
   left: auto;
   right: 8px;
