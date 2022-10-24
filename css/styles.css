@@ -139,6 +139,7 @@ img {
   letter-spacing: 0.02em;
   text-decoration: none;
   color: var(--fontcolorh3);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contacts-item .link {
@@ -148,6 +149,7 @@ img {
   letter-spacing: 0.02em;
   text-decoration: none;
   color: var(--fontcolordescrp);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .o-really-current {
   position: relative;
@@ -156,6 +158,7 @@ img {
 .o-really-current.current-page-link {
   /*display: block;*/
   color: var(--bluetextclr);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .o-really-current::after {
@@ -166,8 +169,9 @@ img {
   bottom: -1px;
   width: 100%;
   height: 4px;
-  background: var(--bluebtn);
+  background-color: var(--bluebtn);
   border-radius: 2px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer {
@@ -201,6 +205,7 @@ img {
   font-style: normal;
   color: var(--whitetxt);
   vertical-align: middle;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /*.footer .contacts-item {
@@ -219,13 +224,14 @@ img {
 .address-item:nth-child(n + 2) {
   color: var(--whitetxt);
   opacity: var(--opasity-const);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .address-link {
   color: var(--whitetxt);
   text-decoration: none;
   letter-spacing: 0.03em;
   line-height: 1.71;
-  /*outline: 2px solid olivedrab;*/ /*Репета-стайл*/
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-links-list {
@@ -247,6 +253,8 @@ img {
   align-items: center;
   justify-content: center;
   background-color: var(--icons-bg-inactive);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   border-radius: 50%;
 }
 .footer-block-hello {
@@ -260,18 +268,17 @@ img {
   width: 20px;
   height: 20px;
   fill: currentColor;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .social-links-link:hover,
 .social-links-link:focus {
   background-color: var(--bluebtn);
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  /* transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);*/
 }
 .social-links-link:hover .social-links-icon,
 .social-links-link:focus .social-links-icon {
   fill: var(--whitetxt);
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  /*transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);*/
 }
 .text-wrapper .social-links-link {
   color: var(--icons-social-grey);
@@ -311,7 +318,7 @@ img {
 .address-item > .address-link:hover
 /*.social-links-item > .social-links-link:hover*/ {
   color: var(--bluetextclr);
-  cursor: pointer;
+  /*cursor: pointer;*/
 }
 .nav-item > .link:active,
 .contacts-item > .link:active,
@@ -347,53 +354,29 @@ img {
 .link:hover > .envelope-icon,
 .link:hover > .smartphone-icon {
   fill: currentColor;
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .link:focus > .envelope-icon,
 .link:focus > .smartphone-icon {
   fill: currentColor;
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .link:active > .envelope-icon,
 .link:active > .smartphone-icon {
   fill: currentColor;
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .class-icon-link > .envelope-icon {
   width: 16px;
   height: 12px;
   margin-right: 10px;
   fill: currentColor;
+  transition: currentColor 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .class-icon-link > .smartphone-icon {
   width: 10px;
   height: 16px;
   margin-right: 10px;
   fill: currentColor;
+  transition: currentColor 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-/*icons at header
-.contacts-item > .link::before,
-.contacts-item > .link::after {
-  content: '';
-  display: inline-block;
-  width: 16px;
-  height: 16px;
-}
-.contacts-item:nth-child(1) > .link::before {
-  background-image: url('../images/envelope-test.svg');
-  fill: var(--fontcolordescrp);
-}
-.contacts-item:nth-child(2) > .link::before {
-  background-image: url('../images/smartphone-test.svg');
-  fill: var(--fontcolordescrp);
-}
-.contacts-item:hover > .link::before {
-  background-color: var(--bluebtn);
-}
-/**/
 
 .hero {
   /*width: 100%;*/
@@ -439,6 +422,7 @@ img {
   /*border-collapse: collapse;*/
   border: none;
   background-color: var(--bluebtn);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   cursor: pointer;
   box-shadow: 0px 4px 4px var(--button-to-order-box-shadow-color);
   font-size: 16px;
@@ -451,8 +435,7 @@ img {
 }
 .hero-button:hover,
 .hero-button:focus {
-  background: var(--button-to-order-active-clr);
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  background-color: var(--button-to-order-active-clr);
 }
 
 .feature-text,
@@ -490,11 +473,14 @@ img {
   /*border-radius: 4px;*/
   /*border: 2px solid var(--clients-color);*/
   color: var(--clients-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .feature-item-icon {
   width: 70px;
   height: 70px;
   fill: currentColor;
+  transition: currentColor 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .feature-title {
   margin-top: 0;
@@ -590,8 +576,6 @@ img {
   border-radius: 0px 0px 4px 4px;
   box-shadow: var(--card-wrapper-shadow);
   border-top: none;
-  /*box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);*/
   text-align: center;
   background: var(--white-bg);
 }
@@ -643,13 +627,14 @@ img {
   display: inherit;
   align-items: inherit;
   justify-content: inherit;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .regular-customer-link .regular-customer-icon {
   width: 106px;
   height: 60px;
   fill: currentColor;
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: currentColor 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .regular-customer-link:hover,
 .regular-customer-link:focus {
@@ -659,8 +644,6 @@ img {
 .regular-customer-link:hover > .regular-customer-icon,
 .regular-customer-link:focus > .regular-customer-icon {
   fill: currentColor;
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 /*.feature-item {
   width: 270px;
@@ -676,8 +659,6 @@ img {
   padding: 0;
   margin: 0;
   gap: 8px;
-  /*
-  margin-top: 34px;*/
   margin-bottom: 50px;
 }
 .filter-button {
@@ -687,6 +668,10 @@ img {
   cursor: pointer;
   background-color: var(--greybtbn);
   color: var(--fontcolorh3);
+  box-shadow: none;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   font-size: 16px;
   font-family: inherit;
   font-weight: 500;
@@ -806,8 +791,6 @@ img {
 .cards-item-link .cards-item-link:hover,
 .cards-item-link .cards-item-link:focus {
   box-shadow: var(--card-wrapper-shadow);
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 /*WTF?!*/
 .backdrop {
