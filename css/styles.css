@@ -775,7 +775,7 @@ img {
   position: relative;
   top: 0;
   left: 0;
-  bottom: 0;
+  /*bottom: 0;*/
   /*display: inline-block;*/
   /*display: flex;*/
   outline: orange 2px dotted;
