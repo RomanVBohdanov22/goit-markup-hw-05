@@ -22,6 +22,7 @@ html {
   --header-frame-color: #ececec;
   --card-item-gap: 30px;
   --card-item-rows-number: 3;
+  --close-btn-transp: rgba(255, 255, 255, 0.1);
   --card-wrapper-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   /*--blue-order-button-active: #188ce8;*/
@@ -339,14 +340,20 @@ img {
 .link:hover > .envelope-icon,
 .link:hover > .smartphone-icon {
   fill: currentColor;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .link:focus > .envelope-icon,
 .link:focus > .smartphone-icon {
   fill: currentColor;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .link:active > .envelope-icon,
 .link:active > .smartphone-icon {
   fill: currentColor;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .class-icon-link > .envelope-icon {
   width: 16px;
@@ -438,6 +445,7 @@ img {
 .hero-button:hover,
 .hero-button:focus {
   background: var(--button-to-order-active-clr);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .feature-text,
@@ -614,6 +622,8 @@ img {
   width: 106px;
   height: 60px;
   fill: currentColor;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .regular-customer-link:hover,
 .regular-customer-link:focus {
@@ -623,6 +633,8 @@ img {
 .regular-customer-link:hover > .regular-customer-icon,
 .regular-customer-link:focus > .regular-customer-icon {
   fill: currentColor;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 /*.feature-item {
   width: 270px;
@@ -661,6 +673,8 @@ img {
   background-color: var(--bluebtn);
   color: var(--whitetxt);
   box-shadow: var(--card-wrapper-shadow);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
   /* box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);*/
 }
@@ -717,6 +731,8 @@ img {
 .cards-list .cards-item-link:hover,
 .cards-list .cards-item-link:focus {
   box-shadow: var(--card-wrapper-shadow);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 /*WTF?!*/
 .backdrop {
@@ -737,19 +753,53 @@ img {
   pointer-events: none;
 }
 .modal {
-  outline: orange 2px solid;
+  margin: 0 auto;
+  position: fixed;
+  top: calc(100% / 2 - 260px);
+  left: calc(100% / 2 - 264px);
+  /*outline: orange 2px solid;*/
   width: 528px;
   height: 521px;
+  display: flex;
+  border: none;
+  border-radius: 4px;
+  background-color: var(--white-bg);
+  justify-content: center;
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  gap: 16px;
 }
 .modal .modal-text {
+  position: relative;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  /*display: inline-block;*/
+  /*display: flex;*/
   outline: orange 2px dotted;
 }
 .modal .modal-close-button {
+  position: absolute;
+  top: 8px;
+  left: auto;
+  right: 8px;
   width: 30px;
   height: 30px;
+  /*border: none;*/
+  border-width: 1px;
+  border-color: var(--greybtbn);
+  border-radius: 50%;
+  background-color: var(--close-btn-transp);
+  background-color: none;
+  display: inline-block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .modal .modal-close-button-icon {
-  fill: orange; /*тимчасово*/
+  fill: currentColor;
   width: 18px;
   height: 18px;
 }
