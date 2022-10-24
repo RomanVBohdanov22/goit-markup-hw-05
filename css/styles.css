@@ -751,7 +751,8 @@ img {
   z-index: 2;
 }
 
-.cards-item-overlay-box:hover .cards-item-overlay {
+/*.cards-item-overlay-box:hover .cards-item-overlay,*/
+.cards-item:hover .cards-item-overlay {
   transform: translatey(0);
 }
 
