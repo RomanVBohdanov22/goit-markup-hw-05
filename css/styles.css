@@ -33,6 +33,8 @@ html {
   --opasity-const: 0.6;
   --gradient-start-hero: rgba(47, 48, 58, 0.4);
   --gradient-end-hero: rgba(47, 48, 58, 0.4);
+  --modal-bg-color: rgba(0, 0, 0, 0.2);
+  --thumb-about-bg-color: rgba(47, 48, 58, 0.8);
   --clients-color: #afb1b8;
 }
 
@@ -261,10 +263,14 @@ img {
 .social-links-link:hover,
 .social-links-link:focus {
   background-color: var(--bluebtn);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .social-links-link:hover .social-links-icon,
 .social-links-link:focus .social-links-icon {
   fill: var(--whitetxt);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .text-wrapper .social-links-link {
   color: var(--icons-social-grey);
@@ -527,9 +533,28 @@ img {
 }
 .about-item {
   margin-top: 0;
+  position: relative;
 }
 .about-image {
   margin-top: 0;
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.about-item-label {
+  position: absolute;
+  margin: 0;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  background-color: var(--thumb-about-bg-color);
+  color: var(--whitetxt);
+  text-align: center;
+  letter-spacing: 0.03em;
+  line-height: 1.14;
+  font-weight: 500;
+  padding-top: 27px;
+  padding-bottom: 27px;
 }
 
 .features-title,
@@ -741,7 +766,7 @@ img {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: var(--modal-bg-color);
   opacity: 1;
   visibility: visible;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
